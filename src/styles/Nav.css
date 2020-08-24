@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.headerNav {
+	background-color: black;
+	color: rgb(241, 241, 241);
+	display: flex;
+	height: 13vh;
+}
+
+.headerNav .logo {
+	display: flex;
+	margin: auto 0 auto 150px;
+}
+
+.headerNav .logo > div {
+	margin: auto;
+}
+
+.headerNav .logo img {
+	margin-right: -13px;
+}
+
+.headerNav .logo h2 {
+	margin-bottom: 0px;
+	margin-right: 50px;
+	font: bold 18px sans-serif;
+	letter-spacing: 1px;
+	line-height: 17px;
+}
+
+.headerNav .navList {
+	display: flex;
+	margin: auto;
+}
+
+.headerNav .navList li {
+	list-style: none;
+	padding: 20px 35px;
+	font: bold 18px sans-serif;
+	cursor: pointer;
+}
+
+.headerNav .navList li:hover {
+	color: #f51d44;
+	text-decoration: underline;
+}
+
+.headerNav .navList li:nth-last-child(1) {
+	background-color: #f51d44;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: 20px;
+}
+
+.headerNav .navList li:nth-last-child(1):hover {
+	background: #b90929;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* ----------------------------------------mobile responsiveness styling begins here------------------------------------- */
+
+@media screen and (max-width: 720px) {
+	.headerNav {
+	height: 8vh;
+} 
+
+.headerNav .logo {
+	margin: auto 0 auto 4px;
+}
+
+.headerNav .logo img {
+	margin-right: -10px;
+	width: 50px;
+	height: 37px;
+}
+
+.headerNav .logo h2 {
+	margin-right: 0;
+	font: bold 10px sans-serif;
+	letter-spacing: 0;
+	line-height: 10px;
+}
+
+.headerNav .navList {
+	display: flex;
+	margin-right: 10px;
+}
+
+.headerNav .navList li {
+	padding: 0 5px;
+	font: 8px sans-serif;
+	text-align: right;
+}
+
+.headerNav .navList li:hover {
+	text-decoration: none;
+}
+
+.headerNav .navList li:nth-last-child(1) {
+display: none;
+}
+
+}
+
+
+
+
+
+/* ----------------------toggling bar animation styling------------------------- */
+
+.mobileNav {
+	display: none;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0)
+	}
+	100% {
+		transform: rotate(360deg)
+	}
+}
+	.hamburger {
+		position: absolute;
+		cursor: pointer;
+		right: 2%;
+		top: 50%;
+		transform: translate(-2%, -50%);
+	}
+
+	.nav-links {
+		position: fixed;
+		z-index: 1;
+		background: rgb(5, 64, 146);
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 90% -20%);
+		-webkit-clip-path: circle(100px at 90% -20%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+	}
+
+	.nav-links.open {
+		clip-path: circle(1000px at 90% -20%);
+		-webkit-clip-path: circle(1000px at 90% -20%);
+		pointer-events: all;
+	}

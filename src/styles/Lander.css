@@ -1,0 +1,1029 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #2e2d2d;
+	color: #ffffff;
+}
+
+.landingContainer {
+	background: linear-gradient(
+			82deg,
+			rgba(14, 14, 14, 1) 0%,
+			rgba(13, 13, 14, 1) 39%,
+			rgba(46, 46, 46, 1) 39%,
+			rgba(25, 25, 25, 1) 55%,
+			rgba(14, 14, 14, 1) 76%,
+			rgba(14, 14, 14, 1) 87%,
+			rgba(46, 46, 46, 1) 100%,
+			rgba(18, 19, 20, 1) 100%,
+			rgba(12, 12, 13, 1) 100%
+		),
+		url("../assets/rmvmain.png") no-repeat top right;
+	background-blend-mode: soft-light;
+	background-size: contain;
+	height: 90vh;
+	padding: 180px 250px;
+}
+
+.landingContainer h2 {
+	color: #f51d44;
+	text-transform: uppercase;
+	font: 24px sans-serif;
+	margin-bottom: 50px;
+}
+
+.landingContainer #lineFnt {
+	margin-right: 15px;
+}
+
+.landingContainer h1 {
+	font: bold 60px sans-serif;
+	text-transform: uppercase;
+}
+
+.landingContainer h3 {
+	font: 20px sans-serif;
+	background-color: #f1254b;
+	text-transform: uppercase;
+	padding: 15px;
+	text-align: center;
+	width: 240px;
+	margin-top: 30px;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+.landingContainer h3:hover {
+	background: #b90929;
+}
+
+.landingContainer .landingSocial {
+	float: right;
+	display: flex;
+	flex-direction: column;
+	margin-top: -200px;
+	margin-right: -210px;
+}
+
+.landingContainer .landingSocial .socialFont {
+	clear: both;
+	font-size: 30px;
+	border: 1px solid grey;
+	border-radius: 50%;
+	padding: 6px;
+	margin: 15px 10px;
+	cursor: pointer;
+}
+
+.landingContainer .landingSocial .socialFont:hover {
+	border: 1px solid #e93455;
+	background-color: #e93455;
+	color: #ffffff;
+}
+
+.experienceContainer {
+	clear: both;
+	background-color: #0c0c0cde;
+	display: flex;
+	justify-content: space-around;
+	padding: 170px 100px;
+}
+
+.experienceContainer > div h1 {
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.experienceContainer > div h1:nth-child(2) {
+	margin-bottom: 50px;
+}
+
+.experienceContainer > div a {
+	color: #e93455;
+	font-style: 16px;
+	margin-bottom: 0px;
+	text-decoration: none;
+}
+
+.experienceContainer > div a:hover {
+	color: #f30934;
+}
+
+.experienceContainer > div hr {
+	border: 1px solid #e93455;
+	width: 140px;
+	margin-top: 0px;
+}
+
+.experienceContainer .experienceRight h5 {
+	letter-spacing: .5px;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+.experienceContainer .experienceRight p {
+	font-size: 24px;
+	color: grey;
+	margin-bottom: 0px;
+}
+
+.experienceContainer .experienceRight p:nth-child(3) {
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.experienceContainer .experienceRight > div {
+	display: flex;
+}
+
+.experienceContainer .experienceRight > div h4 {
+	font-size: 90px;
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+
+.experienceContainer .experienceRight > div h3 {
+	font-size: 14px;
+	color: grey;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.pictureGallery {
+	background: #000000ce;
+	padding: 150px 300px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.pictureGallery div h3 {
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: .5px;
+}
+
+.pictureGallery div p {
+	font-size: 14px;
+	color: rgb(165, 156, 156);
+}
+
+.parent {
+	width: 300px;
+	height: 400px;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.child {
+	width: 100%;
+	height: 100%;
+	background-image: url('../assets/girl-with-leaf.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 1.5s;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+	background-color: #686464;
+	background-blend-mode: luminosity;
+	transform: scale(1.1);
+}
+
+.child2 {
+	background-image: url('../assets/boy-and-girl.jpeg');
+}
+
+.child3 {
+	background-image: url("../assets/girl-with-cup.jpg");
+}
+
+.FullGallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.FullGallery .gallery-picture {
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.FullGallery .gallery-picture:nth-child(1) {
+	width: 470px;
+	height: 650px;
+}
+
+.FullGallery .gallery-picture:nth-child(2) {
+	width: 500px;
+	height: 650px;
+}
+
+.FullGallery .gallery-picture:nth-child(3) {
+	width: 642px;
+	height: 650px;
+}
+
+.FullGallery .gallery-picture:nth-child(4) {
+	width: 590px;
+	height: 550px;
+}
+
+.FullGallery .gallery-picture:nth-child(5) {
+	width: 583px;
+	height: 550px;
+	order: 5;
+}
+
+.FullGallery .gallery-picture:nth-child(6) {
+	width: 440px;
+	height: 550px;
+}
+
+.FullGallery .gallery-one {
+	width: 100%;
+	height: 100%;
+}
+
+.FullGallery .gallery-picture:hover .gallery-one {
+	opacity: 0.1;
+}
+
+.FullGallery .gallery-picture .gall {
+	opacity: 0;
+	position: absolute;
+	left: 5%;
+	bottom: -5%;
+	color: #ffffff;
+}
+
+.FullGallery .gallery-picture .gall h3 {
+	font: bold 32px sans-serif;
+	margin-bottom: 0px;
+}
+
+.FullGallery .gallery-picture .gall p {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+
+.FullGallery .gallery-picture:hover {
+	background: rgba(243, 71, 48, 0.78);
+	transition: background ease 550ms;
+}
+
+.FullGallery .gallery-picture:hover .gall {
+	opacity: 1;
+	bottom: 10%;
+	transition: bottom ease-out 650ms;
+}
+
+.FullGallery .gallery-picture #arrow {
+	position: absolute;
+	bottom: 0;
+	top: 5%;
+	left: -10%;
+	right: 0;
+	font-size: 34px;
+	opacity: 0;
+}
+
+.FullGallery .gallery-picture:hover #arrow {
+	opacity: 1;
+	left: 5%;
+	transition: left ease-out 650ms;
+}
+
+.services {
+	background-color: #0c0c0cde;
+	padding: 150px 0;
+	text-align: center;
+}
+
+.services .serviceHeader {
+	margin-bottom: 70px;
+}
+
+.services .serviceHeader h1 {
+	font: bold 45px sans-serif;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+
+.services .serviceHeader h3 {
+	font: lighter 14px sans-serif;
+	margin-top: 0px;
+	margin-bottom: 3px;
+	letter-spacing: 1px;
+	color: #ff2a51;
+}
+
+.services .serviceHeader hr {
+	border: 1px solid #f51d44;
+	width: 250px;
+	margin: 0 auto;
+}
+
+.services .serviceShelf {
+	display: flex;
+	justify-content: space-around;
+	padding: 0 200px;
+	padding-bottom: 50px;
+}
+
+.services .serviceShelf div {
+	background: #272626;
+	margin: 0 20px;
+	padding: 20px 10px;
+	box-shadow: none;
+}
+
+.services #serviceFont {
+	font-size: 60px;
+	margin-bottom: 40px;
+	color: #ffffff;
+}
+
+.services .serviceShelf div h4 {
+	margin-bottom: 20px;
+}
+
+.services .serviceShelf div p {
+	font-size: 14px;
+}
+
+.services .serviceShelf div:hover {
+	background: #ffffff;
+	box-shadow: -3px -1px 24px -1px rgba(158, 146, 146, 0.753);
+	transition: background ease 500ms, box-shadow ease-out 300ms;
+}
+
+.services .serviceShelf div:hover #serviceFont {
+	color: #e93455;
+	transition: color ease 900ms;
+}
+
+.services .serviceShelf div:hover h4,
+.services .serviceShelf div:hover p {
+	color: #000000;
+}
+
+.editting {
+	background-color: #000000;
+	width: 100%;
+	padding: 150px 200px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.editting div {
+	border: 1px solid grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 15px 30px;
+	padding: 30px 0 10px;
+}
+
+.editting .editHeader {
+	grid-column: 1/3;
+	border: none;
+	display: block;
+	padding: 0px;
+}
+
+.editting .editHeader h2 {
+	text-transform: uppercase;
+	font: bold 54px sans-serif;
+	letter-spacing: 1px;
+}
+
+.editting .editHeader p {
+	font: 14px sans-serif;
+	letter-spacing: .5px;
+	margin-top: 20px;
+}
+
+.editting .editHeader h6 {
+	text-transform: uppercase;
+	font: 18px sans-serif;
+	background: #e93455;
+	text-align: center;
+	width: 180px;
+	margin-top: 40px;
+	padding: 18px 18px;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+.editting .editHeader h6:hover {
+	background: #b90929;
+}
+
+.editting div img {
+	width: 200px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+.editting .img {
+	border: none;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: url("../assets/mezie1.JPG") no-repeat center;
+	background-size: contain;
+}
+
+.editting .img2 {
+	border: none;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: url("../assets/mezie2.jpg") no-repeat center;
+	background-size: contain;
+}
+
+.editting .img3 {
+	border: none;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: url("../assets/csd.JPG") no-repeat center;
+	background-size: contain;
+}
+
+.editting .img4 {
+	border: none;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: url("../assets/meme.jpg") no-repeat center;
+	background-size: contain;
+}
+
+.about {
+	background-color: #0c0c0cde;
+	display: flex;
+	justify-content: space-around;
+	padding: 150px 230px;
+}
+
+.about .myPic {
+	background: #000000;
+	height: 400px;
+	width: 370px;
+	margin-top: 50px;
+	margin-left: -50px;
+	margin-right: 150px;
+	position: relative;
+}
+
+.about .abt-swacky {
+	height: 400px;
+	width: 370px;
+	margin-top: -50px;
+	margin-left: 50px;
+}
+
+.about .camera {
+	height: 250px;
+	position: absolute;
+	right: -50%;
+	bottom: -10%;
+}
+
+.about .myPersona h2 {
+	font: bold 50px sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 25px;
+}
+
+.about .myPersona p {
+	font-size: 14px;
+}
+
+.about .myPersona h3 {
+	text-transform: uppercase;
+	font-size: 20px;
+	background-color: #e93455;
+	width: 200px;
+	text-align: center;
+	margin-top: 40px;
+	padding: 14px 20px;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+.about .myPersona h3:hover {
+	background: #b90929;
+}
+
+.quote {
+	background-color: #000000;
+	text-align: center;
+	padding: 150px 250px;
+}
+
+.quote #blockQuote {
+	font-size: 70px;
+	color: #f30934;
+	margin-bottom: 30px;
+}
+
+.quote h4 {
+	font-size: 20px;
+	color: #bdbaba;
+	line-height: 30px;
+	letter-spacing: .5px;
+}
+
+.quote h5 {
+	font: bold 30px sans-serif;
+	color: #f1254b;
+	margin: 30px 0 5px 0;
+	letter-spacing: 1px;
+}
+
+.quote h6 {
+	color: #bdbaba;
+	letter-spacing: .3px;
+}
+
+/* ----------------------------------------mobile responsiveness styling begins here------------------------------------- */
+
+@media screen and (max-width: 720px) {
+	.landingContainer {
+		background: linear-gradient(
+				82deg,
+				rgba(14, 14, 14, 1) 0%,
+				rgba(13, 13, 14, 1) 100%,
+				rgba(46, 46, 46, 1) 59%,
+				rgba(25, 25, 25, 1) 65%,
+				rgba(14, 14, 14, 1) 100%,
+				rgba(14, 14, 14, 1) 87%,
+				rgba(46, 46, 46, 1) 80%,
+				rgba(18, 19, 20, 1) 100%,
+				rgba(12, 12, 13, 1) 100%
+			),
+			url("../assets/rmvmain.png") no-repeat top;
+		background-size: cover;
+		padding: 350px 20px 10px 20px;
+	}
+
+	.landingContainer h2 {
+		font: 14px sans-serif;
+		margin-bottom: 20px;
+	}
+
+	.landingContainer #lineFnt {
+		margin-right: 5px;
+	}
+
+	.landingContainer h1 {
+		font: bold 22px sans-serif;
+	}
+
+	.landingContainer h3 {
+		font: 12px sans-serif;
+		padding: 12px;
+		width: 130px;
+		margin-top: 15px;
+		letter-spacing: 0px;
+	}
+
+	.landingContainer h3:active,
+	.landingContainer h3:focus {
+		background: #b90929;
+	}
+
+	.landingContainer .landingSocial {
+		margin-top: -150px;
+		margin-right: -15px;
+	}
+
+	.landingContainer .landingSocial .socialFont {
+		font-size: 18px;
+		padding: 3px;
+		margin: 7px 10px;
+	}
+
+	.landingContainer .landingSocial .socialFont:active,
+	.landingContainer .landingSocial .socialFont:focus {
+		border: 1px solid #e93455;
+		background-color: #e93455;
+		color: #ffffff;
+	}
+
+	/* -----------------experience styling starts here -------------------- */
+
+	.experienceContainer {
+		flex-wrap: wrap;
+		padding: 50px 10px;
+	}
+
+	.experienceContainer div:nth-child(1) {
+		margin-left: -50px;
+	}
+
+	.experienceContainer > div h1 {
+		font-size: 27px;
+	}
+
+	.experienceContainer > div h1:nth-child(2) {
+		margin-bottom: 0px;
+	}
+
+	.experienceContainer > div a {
+		font-size: 10px;
+		margin-bottom: 0px;
+	}
+
+	.experienceContainer > div hr {
+		width: 97px;
+		margin-top: 0px;
+		margin-right: -40px;
+	}
+
+	.experienceContainer .experienceRight {
+		padding: 0 5px 0 23px;
+	}
+
+	.experienceContainer .experienceRight h5 {
+		font-size: 12px;
+		letter-spacing: 0px;
+		margin-top: 30px;
+		margin-bottom: 5px;
+	}
+
+	.experienceContainer .experienceRight p {
+		text-align: right;
+		font-size: 14px;
+	}
+
+	.experienceContainer .experienceRight p #pFont {
+		display: none;
+	}
+
+	.experienceContainer .experienceRight p:nth-child(3) {
+		font-size: 10px;
+		margin-bottom: 20px;
+	}
+
+	.experienceContainer .experienceRight > div {
+		display: flex;
+	}
+
+	.experienceContainer .experienceRight > div h4 {
+		font-size: 30px;
+		letter-spacing: 0px;
+		margin: 0 0 0 auto;
+	}
+
+	.experienceContainer .experienceRight > div h3 {
+		font-size: 10px;
+		text-transform: lowercase;
+		margin-top: 5px;
+		margin-left: 5px;
+		margin-right: auto;
+	}
+
+	/* --------------------------picture gallery stylesa starts here---------------------- */
+
+	.pictureGallery {
+		padding: 80px 10px 100px;
+	}
+
+	.pictureGallery div:nth-child(2),
+	.pictureGallery div:nth-child(3) {
+		display: none;
+	}
+
+	.pictureGallery div h3 {
+		margin-top: 10px;
+		margin-bottom: 0px;
+		font-size: 18px;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+
+	.pictureGallery div p {
+		font-size: 12px;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+
+	.parent {
+		width: 260px;
+		height: 350px;
+	}
+
+	.child {
+		width: 100%;
+		height: 100%;
+		/* background-image: url('../assets/girl-with-leaf.jpeg'); */
+		animation: img_slider 18s ease-in infinite;
+	}
+
+	@keyframes img_slider {
+		0% {
+			background-image: url('../assets/girl-with-leaf.jpeg');
+		}
+		50% {
+			background-image: url('../assets/boy-and-girl.jpeg');
+		}
+		100% {
+			background-image: url("../assets/girl-with-cup.jpg");
+		}
+	}
+
+	/* -----------------------full gallery styles starts here---------------------- */
+
+	.FullGallery .gallery-picture:nth-child(1) {
+		width: 100%;
+		height: 500px;
+	}
+
+	.FullGallery .gallery-picture:nth-child(2) {
+		width: 100%;
+		height: 470px;
+	}
+
+	.FullGallery .gallery-picture:nth-child(3) {
+		width: 100%;
+		height: 390px;
+	}
+
+	.FullGallery .gallery-picture:nth-child(4) {
+		width: 100%;
+		height: 380px;
+	}
+
+	.FullGallery .gallery-picture:nth-child(5) {
+		width: 100%;
+		height: 370px;
+		order: 5;
+	}
+
+	.FullGallery .gallery-picture:nth-child(6) {
+		width: 100%;
+		height: 550px;
+	}
+
+	.FullGallery .gallery-one {
+		width: 100%;
+		height: 100%;
+	}
+
+	.FullGallery .gallery-picture .gall {
+		opacity: 0;
+		position: absolute;
+		left: 5%;
+		bottom: -5%;
+		color: #ffffff;
+	}
+
+	.FullGallery .gallery-picture .gall h3 {
+		font: bold 20px sans-serif;
+		margin-left: -5px;
+	}
+
+	.FullGallery .gallery-picture .gall p {
+		font-size: 12px;
+		margin-top: 0px;
+		margin-left: -5px;
+	}
+
+	.FullGallery .gallery-picture #arrow {
+		margin-left: -5px;
+		font-size: 24px;
+	}
+
+	.FullGallery .gallery-picture:hover #arrow {
+		opacity: 1;
+		left: 5%;
+		transition: left ease-out 650ms;
+	}
+
+	/* --------------------------services styling starts here------------------------------ */
+
+	.services {
+		padding: 50px 0;
+	}
+
+	.services .serviceHeader {
+		margin-bottom: 20px;
+	}
+
+	.services .serviceHeader h1 {
+		font: bold 24px sans-serif;
+	}
+
+	.services .serviceHeader h3 {
+		font-size: 10px;
+		letter-spacing: 0px;
+	}
+
+	.services .serviceHeader hr {
+		border: 1px solid #f51d44;
+		width: 250px;
+		margin: 0 auto;
+	}
+
+	.services .serviceShelf {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+		padding-bottom: 0px;
+	}
+
+	.services .serviceShelf div {
+		background: #272626;
+		margin: 10px;
+		padding: 20px 10px;
+		box-shadow: none;
+	}
+
+	.services #serviceFont {
+		font-size: 40px;
+		margin-bottom: 20px;
+		color: #ffffff;
+	}
+
+	.services .serviceShelf div h4 {
+		margin-bottom: 20px;
+	}
+
+	.services .serviceShelf div p {
+		font-size: 10px;
+	}
+
+	.services .serviceShelf div:hover {
+		background: #ffffff;
+		box-shadow: -3px -1px 24px -1px rgba(158, 146, 146, 0.753);
+		transition: background ease 500ms, box-shadow ease-out 300ms;
+	}
+
+	.services .serviceShelf div:hover #serviceFont {
+		color: #e93455;
+		transition: color ease 900ms;
+	}
+
+	.services .serviceShelf div:hover h4,
+	.services .serviceShelf div:hover p {
+		color: #000000;
+	}
+
+	/* ----------------------editting styling starts here----------------------------- */
+
+	.editting {
+		padding: 80px 5px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.editting div {
+		margin: 0 5px 10px;
+		padding: 20px 0 5px 0;
+	}
+
+	.editting div h5 {
+		font-size: 10px;
+		margin-top: 5px;
+	}
+
+	.editting .editHeader h2 {
+		font: bold 24px sans-serif;
+		letter-spacing: 0px;
+	}
+
+	.editting .editHeader p {
+		font: 12px sans-serif;
+		letter-spacing: 0px;
+		margin-top: 0px;
+	}
+
+	.editting .editHeader h6 {
+		font: 12px sans-serif;
+		width: 100px;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		padding: 8px;
+		letter-spacing: 1px;
+	}
+
+	.editting div img {
+		width: 150px;
+		height: 148px;
+		margin-bottom: 0;
+	}
+
+	.editting div:nth-child(2) {
+		width: 95%;
+		height: 200px;
+		margin-right: 5px;
+	}
+	
+	.editting div:nth-child(3) {
+		width: 95%;
+		height: 200px;
+	}
+
+	.editting div:nth-child(6) {
+		display: none;
+	}
+
+	.editting div:nth-child(7) {
+		display: none;
+	}
+	/* ----------------------about styling starts here----------------------------- */
+
+	.about {
+		flex-wrap: wrap-reverse;
+		padding: 50px 10px;
+	}
+
+	.about .myPic {
+		height: 200px;
+		width: 170px;
+		margin-top: 50px;
+		margin-left: 80px;
+	}
+
+	.about .abt-swacky {
+		height: 200px;
+		width: 170px;
+		margin-top: -30px;
+		margin-left: 40px;
+	}
+
+	.about .camera {
+		height: 110px;
+		right: -55%;
+		bottom: -5%;
+	}
+
+	.about .myPersona h2 {
+		font: bold 24px sans-serif;
+		letter-spacing: 0px;
+		margin-bottom: 20px;
+	}
+
+	.about .myPersona p {
+		font-size: 12px;
+	}
+
+	.about .myPersona h3 {
+		font-size: 12px;
+		width: 100px;
+		margin-top: 20px;
+		padding: 10px;
+		letter-spacing: 0px;
+	}
+	/* ----------------------about styling starts here----------------------------- */
+	.quote {
+		padding: 50px 10px;
+	}
+
+	.quote #blockQuote {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	.quote h4 {
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0px;
+	}
+
+	.quote h5 {
+		font: bold 24px sans-serif;
+		margin: 20px 0 0 0;
+		letter-spacing: 0px;
+	}
+
+	.quote h6 {
+		font-size: 10px;
+		letter-spacing: 0px;
+	}
+}
