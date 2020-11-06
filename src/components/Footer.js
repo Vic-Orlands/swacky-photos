@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import '../styles/Footer.css';
 
 import { FaFacebookF, FaTwitter, FaInstagram, FaHeart } from 'react-icons/fa';
@@ -26,11 +27,26 @@ class Footer extends Component {
 						<h5>Navigation</h5>
 
 						<ul>
-							<li>Home</li>
-							<li>About</li>
-							<li>Gallery</li>
-							<li>Services</li>
-							<li>Contact Me</li>
+							<li>
+								<NavLink to="/" className="NavLink">
+									Home
+								</NavLink>
+							</li>
+							<li>
+								<NavLink to="/gallery" className="NavLink">
+									Gallery
+								</NavLink>
+							</li>
+							<li>
+								<NavLink to="/services" className="NavLink">
+									Services
+								</NavLink>
+							</li>
+							<li>
+								<NavLink to="/contact" className="NavLink">
+									Contact Me
+								</NavLink>
+							</li>
 						</ul>
 					</div>
 

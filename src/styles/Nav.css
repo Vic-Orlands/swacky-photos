@@ -49,7 +49,6 @@
 
 .headerNav .navList li:hover {
 	color: #f51d44;
-	text-decoration: underline;
 }
 
 .headerNav .navList li:nth-last-child(1) {
@@ -65,92 +64,59 @@
 	text-decoration: none;
 }
 
+.NavLink {
+	color: #ffffff;
+}
+
+.NavLink:hover {
+	color: #f51d44;
+	text-decoration: none;
+}
+
+.headerNav .navList li:nth-last-child(1):hover .NavLink:nth-last-child(1):hover {
+	color: #ffffff;
+}
+
 /* ----------------------------------------mobile responsiveness styling begins here------------------------------------- */
 
 @media screen and (max-width: 720px) {
 	.headerNav {
-	height: 8vh;
-} 
-
-.headerNav .logo {
-	margin: auto 0 auto 4px;
-}
-
-.headerNav .logo img {
-	margin-right: -10px;
-	width: 50px;
-	height: 37px;
-}
-
-.headerNav .logo h2 {
-	margin-right: 0;
-	font: bold 10px sans-serif;
-	letter-spacing: 0;
-	line-height: 10px;
-}
-
-.headerNav .navList {
-	display: flex;
-	margin-right: 10px;
-}
-
-.headerNav .navList li {
-	padding: 0 5px;
-	font: 8px sans-serif;
-	text-align: right;
-}
-
-.headerNav .navList li:hover {
-	text-decoration: none;
-}
-
-.headerNav .navList li:nth-last-child(1) {
-display: none;
-}
-
-}
-
-
-
-
-
-/* ----------------------toggling bar animation styling------------------------- */
-
-.mobileNav {
-	display: none;
-}
-
-@keyframes rotate {
-	0% {
-		transform: rotate(0)
-	}
-	100% {
-		transform: rotate(360deg)
-	}
-}
-	.hamburger {
-		position: absolute;
-		cursor: pointer;
-		right: 2%;
-		top: 50%;
-		transform: translate(-2%, -50%);
+		height: 8vh;
 	}
 
-	.nav-links {
-		position: fixed;
-		z-index: 1;
-		background: rgb(5, 64, 146);
-		height: 100vh;
-		width: 100%;
-		flex-direction: column;
-		clip-path: circle(100px at 90% -20%);
-		-webkit-clip-path: circle(100px at 90% -20%);
-		transition: all 1s ease-out;
-		pointer-events: none;
+	.headerNav .logo {
+		margin: auto 0 auto 4px;
 	}
 
-	.nav-links.open {
-		clip-path: circle(1000px at 90% -20%);
-		-webkit-clip-path: circle(1000px at 90% -20%);
-		pointer-events: all;
+	.headerNav .logo img {
+		margin-right: -10px;
+		width: 50px;
+		height: 37px;
 	}
+
+	.headerNav .logo h2 {
+		margin-right: 0;
+		font: bold 10px sans-serif;
+		letter-spacing: 0;
+		line-height: 10px;
+	}
+
+	.headerNav .navList {
+		display: flex;
+		margin-right: 10px;
+	}
+
+	.headerNav .navList li {
+		padding: 0 5px;
+		font: 12px sans-serif;
+		text-align: right;
+	}
+
+	.headerNav .navList li:hover {
+		text-decoration: none;
+	}
+
+	.headerNav .navList li:nth-last-child(1) {
+		display: none;
+	}
+}

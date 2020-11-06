@@ -8,7 +8,7 @@
 
 .footer {
 	background-color: #0c0c0cde;
-	padding: 150px 0;
+	padding: 50px 0 150px 0;
 }
 
 footer {
@@ -95,7 +95,7 @@ footer div #followFont:hover {
 
 .footer #foot-par {
 	text-align: center;
-	margin-top: 90px;
+	margin-top: 20px;
 	margin-bottom: -130px;
 	color: #f30934;
 }
@@ -109,7 +109,7 @@ footer div #followFont:hover {
 @media screen and (max-width: 720px) {
 
 	.footer {
-	padding: 50px 10px 20px 10px;
+	padding: 30px 10px 20px 10px;
 }
 
 footer {
@@ -167,7 +167,7 @@ footer div #followFont {
 
 .footer #foot-par {
 	font-size: 12px;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-bottom: 0px;
 }
 

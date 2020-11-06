@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Lander from './components/Lander';
+import Router from './components/Router';
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<Lander />, rootElement);
+ReactDOM.render(<Router />, rootElement);

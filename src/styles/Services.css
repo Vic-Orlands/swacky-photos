@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.cont .loading {
+	background-color: #000000;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -60px;
+}
+
+.services-container .pictureGallery {
+	background: #000000ce;
+	padding: 100px 200px 50px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.services-container .pictureGallery > div {
+	margin: 0 20px 20px 20px;
+}
+
+.services-container .pictureGallery div h3 {
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: .5px;
+}
+
+.services-container .pictureGallery div p {
+	font-size: 14px;
+	color: rgb(165, 156, 156);
+}
+
+.services-container .pictureGallery .parent {
+	width: 300px;
+	height: 400px;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.services-container .pictureGallery .parent .children {
+	width: 100%;
+	height: 100%;
+	background-image: url('../assets/girl-with-leaf.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 1.5s;
+}
+
+.services-container .pictureGallery.parent:hover .children,
+.services-container .pictureGallery.parent:focus .children {
+	transform: scale(1.1);
+}
+
+.services-container .pictureGallery .parent .child2 {
+	background-image: url('../assets/boy-and-girl.jpeg');
+}
+
+.services-container .pictureGallery .parent .child3 {
+	background-image: url("../assets/girl-with-cup.jpg");
+}
+
+.services-container .pictureGallery .parent .child4 {
+	background-image: url("../assets/csd.JPG");
+}
+
+.services-container .pictureGallery .parent .child5 {
+	background-image: url("../assets/girl-with-grass.jpg");
+}
+
+.services-container .pictureGallery .parent .child6 {
+	background-image: url("../assets/girl.jpeg");
+}
+
+/* -----------------------mobile responsiveness--------------------- */
+
+@media screen and (max-width: 768px) {
+	.services-container .pictureGallery {
+		padding: 50px 20px 50px;
+	}
+
+	.services-container .pictureGallery > div {
+		margin: 0 20px 20px 20px;
+	}
+
+	.services-container .pictureGallery div h3 {
+		font-size: 20px;
+	}
+
+	.services-container .pictureGallery div p {
+		font-size: 12px;
+	}
+
+	.services-container .pictureGallery .parent {
+		width: 300px;
+		height: 400px;
+	}
+}

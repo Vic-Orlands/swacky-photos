@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.contact-wrapper {
+	display: flex;
+	background-color: #161414;
+}
+
+.cont .loading {
+	background-color: #000000;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -60px;
+}
+
+.contact-wrapper .pic-contact {
+	height: 90vh;
+	width: 800px;
+	max-height: 100%;
+	max-width: 100%;
+	background: url("../assets/contact.jpg") no-repeat bottom;
+	background-size: cover;
+	background-clip: border-box;
+}
+
+.contact-wrapper > div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-wrapper h3 {
+	font: bold 16px sans-serif;
+	text-transform: uppercase;
+}
+
+.contact-wrapper h1 {
+	font: bold 30px sans-serif;
+	line-height: 25px;
+	letter-spacing: 2px;
+}
+
+.contact-wrapper .hit-me-up {
+	display: flex;
+	margin-top: 25px;
+}
+
+.contact-wrapper .hit-me-up h4 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.contact-wrapper .hit-me-up h5 {
+	font-size: 18px;
+	color: #f64465ad;
+}
+
+.contact-wrapper .hit-me-up #font {
+	font-size: 44px;
+	border: 1px solid #f51d44;
+	color: #f51d44;
+	border-radius: 50%;
+	margin-right: 10px;
+	padding: 8px;
+}
+
+.contact-wrapper .hit-me-up #font:hover {
+	background: #f51d44;
+	color: #ffffff;
+}
+
+/* ---------------------mobile- responsiveness-------------------- */
+@media screen and (max-width: 760px) {
+	.contact-wrapper {
+		flex-wrap: wrap;
+		padding-bottom: 40px;
+	}
+
+	.contact-wrapper .pic-contact {
+		height: 60vh;
+		max-height: 100%;
+		max-width: 100%;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.contact-wrapper h3 {
+		font: bold 12px sans-serif;
+		margin-top: 50px;
+	}
+
+	.contact-wrapper h1 {
+		font: bold 20px sans-serif;
+		line-height: 14px;
+		letter-spacing: 1px;
+	}
+
+	.contact-wrapper .hit-me-up {
+		margin-top: 20px;
+	}
+
+	.contact-wrapper .hit-me-up h4 {
+		font-size: 16px;
+	}
+
+	.contact-wrapper .hit-me-up h5 {
+		font-size: 14px;
+	}
+
+	.contact-wrapper .hit-me-up #font {
+		font-size: 30px;
+	}
+}

@@ -12,6 +12,20 @@ body {
 	color: #ffffff;
 }
 
+.loading {
+	background-color: #000000;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loading .loadingGif {
+	height: 310px;
+	width: 550px;
+}
+
 .landingContainer {
 	background: linear-gradient(
 			82deg,
@@ -573,6 +587,11 @@ body {
 /* ----------------------------------------mobile responsiveness styling begins here------------------------------------- */
 
 @media screen and (max-width: 720px) {
+	.loading .loadingGif {
+		height: 220px;
+		width: 400px;
+	}
+
 	.landingContainer {
 		background: linear-gradient(
 				82deg,
@@ -943,7 +962,7 @@ body {
 		height: 200px;
 		margin-right: 5px;
 	}
-	
+
 	.editting div:nth-child(3) {
 		width: 95%;
 		height: 200px;
